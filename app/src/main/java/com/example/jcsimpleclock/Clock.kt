@@ -29,10 +29,7 @@ fun Clock(modifier: Modifier = Modifier) {
             anim = repeatable(
                 iterations = AnimationConstants.Infinite,
                 animation = tween(durationMillis = 2000, easing = LinearEasing),
-            ),
-            onEnd = { _, _ ->
-                currentAngle += 360/60
-            }
+            )
         )
     }
 
@@ -47,6 +44,7 @@ fun Clock(modifier: Modifier = Modifier) {
             radius = size.minDimension/2,
             style = Stroke(4.dp.toPx()),
         )
+
         withTransform(
             {
                 if (previous > t) {

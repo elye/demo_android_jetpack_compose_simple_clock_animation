@@ -2,7 +2,7 @@ package com.example.jcsimpleclock
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.setContent
@@ -13,7 +13,7 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Clock(modifier = Modifier
-                .fillMaxSize()
+                .aspectRatio(1.0f)
                 .padding(64.dp))
         }
     }
