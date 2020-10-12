@@ -1,0 +1,2 @@
+rootProject.name = "JcSimpleClock"
+include ':app'
